@@ -10,15 +10,18 @@
    <link rel="stylesheet" href="site.css">
     <style>
         .ml4 {
-  position: relative;
-  font-weight: 900;
-  font-size: 4.5em;
+          position: relative;
+          font-weight: 900;
+          font-size: 4.5em;
+          height:82vh;
+          color: aliceblue;
+          z-index: 99999;
 }
 .ml4 .letters {
   position: absolute;
   margin: auto;
-  left: 0;
-  top: 0.3em;
+ left: 50%;
+    top: 50%
   right: 0;
   opacity: 0; 
 }
@@ -90,7 +93,7 @@ anime.timeline({loop: true})
     delay: 500
   });
         setTimeout(function(){
-        document.querySelector('.sign').style.display='block';
+        document.querySelector('.sign').style.display='flex';
             document.querySelector('.ml4').style.display='none';
         },5600)
     </script>
